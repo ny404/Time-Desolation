@@ -11,7 +11,7 @@ function OnTriggerEnter (hit : Collider) {
 function Update(){
 	if (stepped) iTween.FadeTo(target,0,duration);
 	if(target.GetComponent.<Renderer>().material.color.a == 0) GetComponent(TrigDestroy).Die(target);
-	print (target.GetComponent.<Renderer>().material.color.a);
+	//print (target.GetComponent.<Renderer>().material.color.a);
 }
 
 /*function die(){
