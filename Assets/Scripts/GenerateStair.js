@@ -12,5 +12,4 @@ function OnTriggerEnter(hit : Collider){
 function Spawn () { 
 	Instantiate(spawnNext, Vector3(0,transform.position.y-2,transform.position.z+2), Quaternion.identity);
 	Destroy(this);
-	//return spawnNext;
 }

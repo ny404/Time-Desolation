@@ -1,6 +1,7 @@
 ﻿#pragma strict
 
 var player : GameObject;
+var YCoordinateSpawn : float;
 //var distToGround: float;
  
  function Start(){
@@ -8,12 +9,10 @@ var player : GameObject;
    //distToGround = GetComponent.<Collider>().bounds.extents.y;
  }
  
- /*function IsGrounded(): boolean {
-   return Physics.Raycast(transform.position, -Vector3.up, distToGround + 0.1);
- }*/
+ function IsGrounded(): boolean {
+   return Physics.Raycast(transform.position, -Vector3.up,  0.1);
+ }
  
  function Update () {
-   //if (player.GetComponent.<Rigidbody>().velocity.y < 0 ){
-	if(!player.GetComponent.<CharacterController>().isGrounded) print ("falling");
-	else  print ("grounded");
+	if((!player.GetComponent.<CharacterController>().isGrounded) && player.transform.position.y <= YCoordinateSpawn) GetComponent(NumManager).Generate();
  }
