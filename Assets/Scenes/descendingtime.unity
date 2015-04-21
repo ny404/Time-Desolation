@@ -233,6 +233,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 80f6c4540082c7e499e3e451877d7be6, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &260659261
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+  m_PrefabInternal: {fileID: 748402902}
 --- !u!1 &362675232
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +410,14 @@ Prefab:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_BackGroundColor.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0
@@ -493,6 +505,7 @@ GameObject:
   - 4: {fileID: 2056917108}
   - 114: {fileID: 2056917109}
   - 114: {fileID: 2056917110}
+  - 114: {fileID: 2056917111}
   m_Layer: 0
   m_Name: genFX
   m_TagString: Untagged
@@ -549,3 +562,17 @@ MonoBehaviour:
   - {fileID: 127746, guid: 31e584c323d4f094aa3ec618165e1afc, type: 2}
   - {fileID: 160004, guid: 1a01094b1e8a19b448790d335dc0d2af, type: 2}
   - {fileID: 145016, guid: 8ab215e85c5ffbb408c7574fc7477d05, type: 2}
+--- !u!114 &2056917111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2056917107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ee48838f1dc8a4c8930eb9fc8ceda1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraTarget: {fileID: 260659261}
+  newColor: {r: 1, g: 1, b: 1, a: 1}
+  duration: 20

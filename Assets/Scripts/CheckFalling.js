@@ -14,5 +14,8 @@ var YCoordinateSpawn : float;
  }
  
  function Update () {
-	if((!player.GetComponent.<CharacterController>().isGrounded) && player.transform.position.y <= YCoordinateSpawn) GetComponent(NumManager).Generate();
+	if((!player.GetComponent.<CharacterController>().isGrounded) && player.transform.position.y <= YCoordinateSpawn) {
+		GetComponent(NumManager).Generate();
+		GetComponent(TransitionBG).changeColor();
+	}
  }
