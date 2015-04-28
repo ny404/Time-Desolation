@@ -6,6 +6,7 @@ TagManager:
   tags:
   - walkable
   - stair
+  - Door
   layers:
   - Default
   - TransparentFX

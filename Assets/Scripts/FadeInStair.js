@@ -15,6 +15,7 @@ function FadeIn () {
 }
  
  function FadeOut(){
+	 yield WaitForSeconds(fadeoutDuration);
 	 Destroy(gameObject,fadeoutDuration);
 	for (var t = 0.0; t < fadeoutDuration; t += Time.deltaTime) {
 		GetComponent.<Renderer>().material.color = Color.Lerp (colorEnd, colorStart, t/fadeoutDuration);
@@ -24,9 +25,9 @@ function FadeIn () {
  
 function Update() {
 	if (!done){
-		if (Input.GetKey(KeyCode.W)) FadeIn();
+		if (Input.anyKey || Input.GetAxis("Mouse X") || Input.GetAxis("Mouse Y")) FadeIn();
 	}
 	else  {
-		FadeOut();
+		if (Input.anyKey || Input.GetAxis("Mouse X") || Input.GetAxis("Mouse Y"))  FadeOut();
 	}
 }
