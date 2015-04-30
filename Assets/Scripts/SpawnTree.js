@@ -23,6 +23,7 @@ function Update () {
 		this.enabled = false;
 		return;
 	}
+	print (count);
  }
 
 function Generate () {
@@ -32,6 +33,5 @@ function Generate () {
 	Instantiate(prefab, Vector3(Random.insideUnitSphere.x * xRadius + transform.position.x, transform.position.y, Random.insideUnitSphere.z * zRadius + transform.position.z), Quaternion.Euler(-90, 0, 0));
 	timer = 0;
 	count += 1;
-	//Destroy(this);
 }
 

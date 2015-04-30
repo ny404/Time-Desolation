@@ -5,7 +5,11 @@ var scaleMaxFactor : float;
 
 private var scaleSize : float;
 
+function Start() {
+	SetSize();
+}
+
 function SetSize () {
 	scaleSize = Random.Range(scaleMinFactor, scaleMaxFactor);
-	transform.localScale += new Vector3(scaleSize,scaleSize,scaleSize);
+	transform.localScale = Vector3(scaleSize,scaleSize,scaleSize);
 }

@@ -120,8 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0d5e69ccfa32f5489c3b9d6eeddf296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleMinFactor: 1
-  scaleMaxFactor: 5
+  scaleMinFactor: .0500000007
+  scaleMaxFactor: .100000001
 --- !u!114 &11490512
 MonoBehaviour:
   m_ObjectHideFlags: 1

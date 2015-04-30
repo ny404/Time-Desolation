@@ -5,7 +5,7 @@ private var spawned  : boolean;
 
 function Start () {
 	iTween.FadeFrom(gameObject,0,2);
-	GetComponent(ScaleProperty).SetSize();
+	GetComponent(ScaleProperty);
 	spawned = true;
 }
 
