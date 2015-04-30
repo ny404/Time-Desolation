@@ -29,6 +29,7 @@ GameObject:
   - 54: {fileID: 5412026}
   - 114: {fileID: 11453206}
   - 114: {fileID: 11433242}
+  - 108: {fileID: 10869474}
   m_Layer: 0
   m_Name: leftdoor
   m_TagString: Door
@@ -194,7 +195,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147826}
   serializedVersion: 2
-  m_Mass: 100
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -209,7 +210,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147030}
   serializedVersion: 2
-  m_Mass: 100
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 1
@@ -253,6 +254,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!108 &10869474
+Light:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147030}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_NormalBias: .400000006
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &11433242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -264,7 +297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c2ba93a27785ba4589cf5abbb0164fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 25
   initialPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &11441246
 MonoBehaviour:
@@ -277,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c2ba93a27785ba4589cf5abbb0164fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 25
   initialPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &11444226
 MonoBehaviour:
@@ -290,7 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505699752425e8a4ea82350cc8425110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 75
+  speed: 100
 --- !u!114 &11453206
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -302,7 +335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505699752425e8a4ea82350cc8425110, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 75
+  speed: 100
 --- !u!114 &11490526
 MonoBehaviour:
   m_ObjectHideFlags: 1

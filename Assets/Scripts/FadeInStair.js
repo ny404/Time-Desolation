@@ -25,7 +25,7 @@ function FadeIn () {
  
 function Update() {
 	if (!done){
-		if (Input.anyKey || Input.GetAxis("Mouse X") || Input.GetAxis("Mouse Y")) FadeIn();
+		if (Input.anyKey ) FadeIn();
 	}
 	else  {
 		if (Input.anyKey || Input.GetAxis("Mouse X") || Input.GetAxis("Mouse Y"))  FadeOut();

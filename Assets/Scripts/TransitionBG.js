@@ -23,6 +23,6 @@ function changeColor () {
 
 function Update(){
 	if (isChanged) {
-		Application.LoadLevel(1);
+		GetComponent(ResetLevel).Reset();
 	}
 }
