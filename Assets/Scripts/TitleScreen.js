@@ -14,7 +14,7 @@ function Update () {
 		if (Input.anyKey) {
 			prefab.GetComponent(TrailRenderer).enabled = true;
 			FadeBackground.GetComponent(fadetoBlackscreen).enabled = true;
-			cam.transform.Rotate(Vector3(45*Time.deltaTime,0,0));
+			cam.transform.Rotate(Vector3(15*Time.deltaTime,0,0));
 			if (cam.transform.eulerAngles.x >= 180) isStarted = true;
 		}
 	}
